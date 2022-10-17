@@ -8,14 +8,11 @@ function Card(props) {
     <div>
       <div className="term">
         <dt>
-          {/* <span className="emoji" role="img" aria-label="Tense Biceps">
-            // 💪
-          </span> */}
           <Emoji emoji={props.emoji} />
           <Name name={props.name} />
         </dt>
         <dd>
-          <Details detail={props.meaning} />
+          <Details meaning={props.meaning} />
         </dd>
       </div>
     </div>

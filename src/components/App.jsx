@@ -3,7 +3,9 @@ import { emojipedia } from "../emojipedia";
 import { Card } from "./Card";
 
 function createCard(contact) {
-  return <Card emoji={contact.emoji} name={contact.name} />;
+  return (
+    <Card emoji={contact.emoji} name={contact.name} meaning={contact.meaning} />
+  );
 }
 
 function App() {
