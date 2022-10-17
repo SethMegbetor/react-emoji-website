@@ -1,7 +1,7 @@
 import React from "react";
 
 function Details(props) {
-  return <div>{props.meaning}</div>;
+  return <dd>{props.meaning}</dd>;
 }
 
 export { Details };

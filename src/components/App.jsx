@@ -14,9 +14,7 @@ function App() {
       <h1>
         <span>emojipedia</span>
       </h1>
-      {/* insert contact card here */}
-      {emojipedia.map(createCard)}
-      <dl className="dictionary"></dl>
+      <dl className="dictionary">{emojipedia.map(createCard)}</dl>
     </div>
   );
 }
