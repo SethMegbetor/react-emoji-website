@@ -1,13 +1,15 @@
 import React from "react";
+import { Emoji } from "./Emoji";
 
 function Card(props) {
   return (
     <div>
       <div className="term">
         <dt>
-          <span className="emoji" role="img" aria-label="Tense Biceps">
-            💪
-          </span>
+          {/* <span className="emoji" role="img" aria-label="Tense Biceps">
+            // 💪
+          </span> */}
+          <Emoji emoji={props.emoji} />
           <span>Tense Biceps</span>
         </dt>
         <dd>
@@ -44,3 +46,5 @@ function Card(props) {
     </div>
   );
 }
+
+export { Card };
