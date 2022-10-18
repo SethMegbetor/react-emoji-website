@@ -2,9 +2,13 @@ import React from "react";
 import { emojipedia } from "../emojipedia";
 import { Card } from "./Card";
 
-function createCard(contact) {
+function createCard(emojiWhat) {
   return (
-    <Card emoji={contact.emoji} name={contact.name} meaning={contact.meaning} />
+    <Card
+      emoji={emojiWhat.emoji}
+      name={emojiWhat.name}
+      meaning={emojiWhat.meaning}
+    />
   );
 }
 
@@ -20,3 +24,11 @@ function App() {
 }
 
 export default App;
+
+/**** How to use the map function to truancate the text to only a 100 characters ****/
+
+// const newEmojipedia = emojipedia.map(function (emojiEntry) {
+//   return emojiEntry.meaning.substring(0, 100);
+// });
+
+// console.log(newEmojipedia);
